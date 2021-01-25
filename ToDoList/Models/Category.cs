@@ -6,11 +6,11 @@ namespace ToDoList.Models
   {
     public Category()
     {
-      this.JoinEntries = new HashSet<CategoryItem>();
+      this.JoinEntities = new HashSet<CategoryItem>();
     }
 
     public int CategoryId { get; set; }
     public string Name { get; set; }
-    public virtual ICollection<CategoryItem> JoinEntries { get; set; }
+    public virtual ICollection<CategoryItem> JoinEntities { get; set; }
   }
 }
